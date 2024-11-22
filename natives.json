@@ -44034,43 +44034,47 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "int",
+          "name": "contextId"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0x886E06C2": {
       "name": "REGISTER_ACTOR_SPEECH_CONTEXT",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "contextId"
         },
         {
           "type": "const char*",
-          "name": "p1"
+          "name": "contextName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "int",
+          "name": "initialDelay"
         },
         {
-          "type": "Any",
-          "name": "p3"
+          "type": "int",
+          "name": "cooldown"
         },
         {
-          "type": "Any",
-          "name": "p4"
+          "type": "BOOL",
+          "name": "isEnabled"
         },
         {
-          "type": "Any",
-          "name": "p5"
+          "type": "int",
+          "name": "priority"
+        },
+        {
+          "type": "BOOL",
+          "name": "isDynamic"
         }
       ],
       "return_type": "void"
@@ -44079,15 +44083,15 @@
       "name": "FINISH_REGISTERING_ACTOR_SPEECH_CONTEXTS",
       "comment": "",
       "params": [],
-      "return_type": "const char*"
+      "return_type": "void"
     },
     "0xCB139D15": {
       "name": "REGISTER_NUM_SPEECH_CONTEXTS",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "numContexts"
         }
       ],
       "return_type": "void"
@@ -44095,8 +44099,13 @@
     "0xF07F5E41": {
       "name": "REGISTER_NUM_CONTEXT_TYPES",
       "comment": "",
-      "params": [],
-      "return_type": "int"
+      "params": [
+        {
+          "type": "int",
+          "name": "numContextTypes"
+        }
+      ],
+      "return_type": "void"
     }
   },
   "SQUADS": {
