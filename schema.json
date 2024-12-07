@@ -63,7 +63,7 @@
 				"Player", "Player*",
 				"Prompt", "Prompt*",
 				"ScrHandle", "ScrHandle*",
-				"Vector3*",
+				"Vector3", "Vector3*",
 				"Vehicle", "Vehicle*",
 				"Volume", "Volume*"
 			]

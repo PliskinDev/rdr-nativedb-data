@@ -17424,57 +17424,57 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "BOOL*",
+          "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0xFAC315B7": {
       "name": "DECOR_GET_FLOAT_VERBOSE",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "float*",
+          "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0x1F003E6C": {
       "name": "DECOR_GET_INT_VERBOSE",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "int*",
+          "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0x8E101F5C": {
       "name": "DECOR_SET_BOOL",
@@ -17493,7 +17493,7 @@
           "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xBC7BD5CB": {
       "name": "DECOR_SET_FLOAT",
@@ -17512,7 +17512,7 @@
           "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xDB718B21": {
       "name": "DECOR_SET_INT",
@@ -17531,7 +17531,7 @@
           "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xAAED0B69": {
       "name": "DECOR_SET_VECTOR",
@@ -17546,11 +17546,11 @@
           "name": "propertyName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "Vector3",
+          "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x53D3FB4A": {
       "name": "DECOR_SET_STRING",
@@ -17569,7 +17569,7 @@
           "name": "string"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x44F8BCC5": {
       "name": "DECOR_SET_OBJECT",
@@ -17588,7 +17588,7 @@
           "name": "object"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xEDF99C77": {
       "name": "DECOR_CHECK_STRING",
@@ -17614,12 +17614,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "target"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         }
       ],
       "return_type": "int"
@@ -17629,42 +17629,42 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0x8DE5382F": {
       "name": "DECOR_GET_FLOAT",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         }
       ],
-      "return_type": "int"
+      "return_type": "float"
     },
     "0xDDDE59B5": {
       "name": "DECOR_GET_INT",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         }
       ],
       "return_type": "int"
@@ -17674,31 +17674,31 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "Vector3*",
+          "name": "value"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0x24F2E859": {
       "name": "DECOR_GET_OBJECT",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Object",
+          "name": "object"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "propertyName"
         }
       ],
       "return_type": "int"
@@ -17731,18 +17731,18 @@
           "name": "propertyName"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0xFDB9E349": {
       "name": "DECOR_REMOVE_ALL",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Actor",
+          "name": "actor"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     }
   },
   "DLC": {
