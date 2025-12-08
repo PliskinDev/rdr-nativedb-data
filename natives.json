@@ -43551,12 +43551,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "challengeId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "description"
         }
       ],
       "return_type": "void"
@@ -45599,20 +45599,20 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "const char*",
+          "name": "statName"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "statCategory"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "int",
+          "name": "statValue"
         },
         {
-          "type": "Any",
-          "name": "p3"
+          "type": "int",
+          "name": "flags"
         }
       ],
       "return_type": "void"
@@ -45622,12 +45622,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "const char*",
+          "name": "statName"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "isHidden"
         }
       ],
       "return_type": "void"
@@ -45637,16 +45637,16 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "const char*",
+          "name": "statName"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "statCategory"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "Hash",
+          "name": "statHash"
         }
       ],
       "return_type": "void"
@@ -45656,8 +45656,8 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "BOOL",
+          "name": "toggle"
         }
       ],
       "return_type": "void"
@@ -45667,35 +45667,23 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "entryId"
         },
         {
-          "type": "Any",
-          "name": "p1"
-        },
-        {
-          "type": "Any",
-          "name": "p2"
-        },
-        {
-          "type": "Any",
-          "name": "p3"
-        },
-        {
-          "type": "Any",
-          "name": "p4"
+          "type": "const char*",
+          "name": "textLabel"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x5545C218": {
       "name": "GET_SAGPLAYER_STAT_FLOAT",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "statId"
         }
       ],
       "return_type": "float"
@@ -45705,8 +45693,8 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "statId"
         }
       ],
       "return_type": "int"
@@ -45716,12 +45704,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "statId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "statValue"
         }
       ],
       "return_type": "void"
@@ -45732,14 +45720,14 @@
       "params": [
         {
           "type": "int",
-          "name": "result"
+          "name": "statId"
         },
         {
-          "type": "float",
-          "name": "p1"
+          "type": "int",
+          "name": "statValue"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xBBF4F7E4": {
       "name": "GET_NUM_KILLS_LAST_DEADEYE",
@@ -52209,12 +52197,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "categoryId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "categoryName"
         }
       ],
       "return_type": "void"
@@ -52278,15 +52266,15 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "ammo"
         },
         {
           "type": "float",
-          "name": "p1"
+          "name": "biasMultiplier"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0xCCB57C38": {
       "name": "GET_AMMO_ENUM_STRING_FROM_ENUM",
@@ -52383,64 +52371,64 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "weatherType"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "sunny"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "float",
+          "name": "cloudy"
         },
         {
-          "type": "Any",
-          "name": "p3"
+          "type": "float",
+          "name": "fog"
         },
         {
-          "type": "Any",
-          "name": "p4"
+          "type": "float",
+          "name": "storm"
         },
         {
-          "type": "Any",
-          "name": "p5"
+          "type": "float",
+          "name": "windy"
         },
         {
-          "type": "Any",
-          "name": "p6"
+          "type": "float",
+          "name": "snow"
         },
         {
-          "type": "Any",
-          "name": "p7"
+          "type": "float",
+          "name": "rainIntensity"
         },
         {
-          "type": "Any",
-          "name": "p8"
+          "type": "float",
+          "name": "thunderIntensity"
         },
         {
-          "type": "Any",
-          "name": "p9"
+          "type": "float",
+          "name": "lightningFreq"
         },
         {
-          "type": "Any",
-          "name": "p10"
+          "type": "float",
+          "name": "cloudCoverage"
         },
         {
-          "type": "Any",
-          "name": "p11"
+          "type": "float",
+          "name": "fogDensity"
         },
         {
-          "type": "Any",
-          "name": "p12"
+          "type": "float",
+          "name": "windStrength"
         },
         {
-          "type": "Any",
-          "name": "p13"
+          "type": "float",
+          "name": "temperature"
         },
         {
-          "type": "Any",
-          "name": "p14"
+          "type": "float",
+          "name": "ambientLight"
         }
       ],
       "return_type": "void"
