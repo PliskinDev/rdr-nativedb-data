@@ -42477,8 +42477,24 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },        
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "radius"
+        },
+        {
+          "type": "const char*",
+          "name": "typeName"
         }
       ],
       "return_type": "int"
@@ -42514,37 +42530,45 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "const char*",
+          "name": "instanceName"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x31940E4C": {
       "name": "GET_CENTER_OF_GRAVITY",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "physInst"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float*",
+          "name": "x"
+        },
+        {
+          "type": "float*",
+          "name": "y"
+        },
+        {
+          "type": "float*",
+          "name": "z"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x7151E7F0": {
       "name": "HAS_PROP_BEEN_DAMAGED",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         }
       ],
-      "return_type": "int"
+      "return_type": "BOOL"
     },
     "0xFDC6E853": {
       "name": "GET_PROP_HEALTH",
@@ -42562,12 +42586,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "health"
         }
       ],
       "return_type": "void"
@@ -42583,12 +42607,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Volume",
+          "name": "volume"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "int",
+          "name": "mode"
         }
       ],
       "return_type": "void"
@@ -42598,8 +42622,8 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         }
       ],
       "return_type": "void"
@@ -42609,16 +42633,16 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "canBeTargeted"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "BOOL",
+          "name": "allowLockOn"
         }
       ],
       "return_type": "void"
@@ -42628,12 +42652,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "radius"
         }
       ],
       "return_type": "void"
@@ -42643,16 +42667,16 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "width"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "float",
+          "name": "width"
         }
       ],
       "return_type": "void"
@@ -42662,12 +42686,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "float",
+          "name": "bias"
         }
       ],
       "return_type": "void"
@@ -42677,12 +42701,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "isEnemy"
         }
       ],
       "return_type": "void"
@@ -42707,8 +42731,8 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         }
       ],
       "return_type": "BOOL"
@@ -42749,12 +42773,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "graveId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "dugUp"
         }
       ],
       "return_type": "void"
@@ -42764,8 +42788,8 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "object"
         }
       ],
       "return_type": "int"
@@ -42775,28 +42799,28 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "propId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "animName"
         },
         {
-          "type": "Any",
-          "name": "p2"
+          "type": "int",
+          "name": "animType"
         },
         {
-          "type": "Any",
-          "name": "p3"
+          "type": "int",
+          "name": "flags"
         },
         {
-          "type": "Any",
-          "name": "p4"
+          "type": "float",
+          "name": "playSpeed"
         },
         {
-          "type": "Any",
-          "name": "p5"
+          "type": "float",
+          "name": "blendIn"
         }
       ],
       "return_type": "int"
@@ -42866,15 +42890,15 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "const char*",
+          "name": "originalModel"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "const char*",
+          "name": "remapModel"
         }
       ],
-      "return_type": "int"
+      "return_type": "void"
     },
     "0x6D555332": {
       "name": "CLEAR_PROP_REMAP",
