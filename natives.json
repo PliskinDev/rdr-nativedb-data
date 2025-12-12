@@ -43067,12 +43067,12 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "Mount",
+          "name": "mount"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "allowPassenger"
         }
       ],
       "return_type": "void"
@@ -43142,52 +43142,48 @@
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "horseId"
         },
         {
-          "type": "Any",
-          "name": "p1"
+          "type": "BOOL",
+          "name": "toggle"
         }
       ],
-      "return_type": "Any"
+      "return_type": "void"
     },
     "0xCA7CB126": {
       "name": "HORSE_AUTO_JUMP_ENABLED_FOR_AI_RIDERS",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
-        },
-        {
-          "type": "Any",
-          "name": "p1"
+          "type": "int",
+          "name": "horseId"
         }
       ],
-      "return_type": "Any"
+      "return_type": "void"
     },
     "0x28FCBDF2": {
       "name": "HORSE_ADD_REPULSION_EXCLUSION_VOLUME",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "volume"
         }
       ],
-      "return_type": "Any"
+      "return_type": "void"
     },
     "0x5DE07F18": {
       "name": "HORSE_REMOVE_REPULSION_EXCLUSION_VOLUME",
       "comment": "",
       "params": [
         {
-          "type": "Any",
-          "name": "p0"
+          "type": "int",
+          "name": "volume"
         }
       ],
-      "return_type": "Any"
+      "return_type": "void"
     },
     "0xF3976D70": {
       "name": "HORSE_SET_CURR_FRESHNESS",
